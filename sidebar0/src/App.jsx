@@ -1,6 +1,6 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Mailbox from "./pages/Mailbox";
 import Analytics from "./pages/Analytics";
