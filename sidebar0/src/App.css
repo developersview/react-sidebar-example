@@ -1,0 +1,89 @@
+.App {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 240px;
+    background-color: #323f52;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sidebarList {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div .content {
+    margin-left: 260px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebarList .row {
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.sidebarList .row:hover {
+    cursor: pointer;
+    background-color: #3c4d66;
+}
+
+.sidebarList #active {
+    background-color: #32373f;
+}
+
+.row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.row #title {
+    flex: 70%;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
